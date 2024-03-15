@@ -23,7 +23,7 @@ with open("class.txt", "w+",encoding="UTF-8") as file1:
     clas = soup.find_all(class_=True)
 
     a = [print(i) for i in clas]
-    file1.write(f"{clas}")
+    file1.write(f"{a}")
 
 with open("text.txt", "w+",encoding="UTF-8") as file:
     file.write(soup.text)
